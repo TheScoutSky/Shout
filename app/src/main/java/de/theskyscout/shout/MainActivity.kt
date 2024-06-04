@@ -11,7 +11,11 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.dp
+import de.theskyscout.shout.ui.navigation.ScreenNavigation
 import de.theskyscout.shout.ui.theme.ShoutTheme
+
+val viewModel = MainViewModel()
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,29 +23,16 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             ShoutTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
-                }
+                ScreenNavigation()
             }
         }
     }
 }
 
+@Preview
 @Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
+fun PreviewMain() {
     ShoutTheme {
-        Greeting("Android")
+        ScreenNavigation()
     }
 }

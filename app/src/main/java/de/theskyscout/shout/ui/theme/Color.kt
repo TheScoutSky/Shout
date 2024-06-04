@@ -2,10 +2,21 @@ package de.theskyscout.shout.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
-val Purple80 = Color(0xFFD0BCFF)
-val PurpleGrey80 = Color(0xFFCCC2DC)
-val Pink80 = Color(0xFFEFB8C8)
+// Dark Color Scheme
+val BackgroundDarkColor = Color(0xFF0E0E0E)
+val SurfaceDarkColor = Color(0xFF232323)
+val PrimaryDarkColor = Color(0xFF4190FF)
+val onPrimaryDarkColor = Color(0xFFFFFFFF)
+val SecondaryDarkColor = Color(0xFF569CFF)
+val TertiaryDarkColor = Color(0xFF3A8DFF)
+val onPrimaryContainerDarkColor = Color(0xFF000000)
 
-val Purple40 = Color(0xFF6650a4)
-val PurpleGrey40 = Color(0xFF625b71)
-val Pink40 = Color(0xFF7D5260)
+
+// Light Color Scheme
+val BackgroundLightColor = Color(0xFFFFFFFF)
+val SurfaceLightColor = Color(0xFFE5E5E5)
+val PrimaryLightColor = Color(0xFF0077CC)
+val onPrimaryLightColor = Color(0xFFFFFFFF)
+val SecondaryLightColor = Color(0xFF0099FF)
+val TertiaryLightColor = Color(0xFF0055CC)
+val onPrimaryContainerLightColor = Color(0xFFD6D6D6)
